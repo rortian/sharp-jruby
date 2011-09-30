@@ -1,3 +1,4 @@
 cd 'cde-root/home/sharp-jruby/cdes/test'
 './jruby.cde' '-v'
 './pry.cde'
+'./vim.cde'
