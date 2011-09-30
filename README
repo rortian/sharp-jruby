@@ -1,1 +1,21 @@
 Using cde (https://github.com/pgbovine/CDE/) to generate archives for all the libraries used to execute jruby and an obscure early access openjdk build (http://jdk7.java.net/download.html)
+
+What works:
+
+On 2.6 x86_64 kernels from the last 5 years:
+
+$7z x eajdk.tar.7z 
+$tar xvf eajdk.tar
+$cd cde-package/cde-root/
+$./cde-exec jruby -v
+jruby 1.7.0.dev (ruby-1.8.7-p330) (2011-09-30 4dba2c0) (Java HotSpot(TM) 64-Bit Server VM 1.7.0_02-ea) [linux-amd64-java]
+
+Info and some rubyconf 2011 notes:
+
+https://docs.google.com/document/d/1kPAKmbsC1Yg6BSNXd_PTCMd6NDHSB5IeCFcJwTYTHBU/edit?hl=en_US
+
+Right now on master you should able to 
+
+./cde-exec vim
+./cde-exec bundle
+./cde-exec pry
